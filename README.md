@@ -16,7 +16,7 @@ https://github.com/harjot-oberai/Long-Shadows
 --------
 <p align="left">
   <img src="https://i.imgur.com/WTDeyuy.png" width="320"/>
-  </span>  
-  <img src="https://i.imgur.com/qq9mKUm.png" width="320"/>
+                                                            
+  <img src="https://i.imgur.com/qq9mKUm.png" width="320"/>
 </p>                  
 
