@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.administrator.pickerviewdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.sdsmdg.harjot.longshadows.LongShadowsWrapper
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="#00000000">
+
+            <com.sdsmdg.harjot.longshadows.LongShadowsTextView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="The world is so big"
+                android:textColor="#5c868d"
+                android:textSize="25dp"
+                app:shadow_length="30"/>
+        </com.sdsmdg.harjot.longshadows.LongShadowsWrapper>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <org.jaaksi.pickerview.widget.PickerView
+            android:id="@+id/countyPickerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pickerview_shape"
+            app:pv_disallow_intercept_touch="true"
+            app:pv_end_color="#50e7f5de"
+            app:pv_is_circulation="false"
+            app:pv_orientation="horizontal"
+            app:pv_start_color="#e7f5de"
+            app:pv_visible_item_count="7"/>
+
+        <org.jaaksi.pickerview.widget.PickerView
+            android:id="@+id/landscapePickerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/pickerview_shape"
+            app:pv_disallow_intercept_touch="true"
+            app:pv_end_color="#50e7f5de"
+            app:pv_is_circulation="false"
+            app:pv_orientation="horizontal"
+            app:pv_start_color="#e7f5de"
+            app:pv_visible_item_count="7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:background="#00000000"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/landscapeImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
